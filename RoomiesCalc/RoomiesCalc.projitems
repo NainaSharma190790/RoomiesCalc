@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{F75682C0-E9AA-46CB-83B2-E109F59A5612}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>RoomiesCalc</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)RoomiesCalc.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AddGroupView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AddGroupViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Group.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IBusinessBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\RoomCalDataBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataBase\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CellView\GroupCell.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Renderers\" />
+  </ItemGroup>
+</Project>
