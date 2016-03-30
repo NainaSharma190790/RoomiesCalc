@@ -18,9 +18,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Interface\IBusinessBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataBase\RoomCalDataBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataBase\SQLite.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)CellView\GroupCell.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Renderers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)CellView\" />
   </ItemGroup>
 </Project>

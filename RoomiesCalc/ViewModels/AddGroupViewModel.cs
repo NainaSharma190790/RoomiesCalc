@@ -48,17 +48,14 @@ namespace RoomiesCalc
 				return _addGroupCommand ?? (_addGroupCommand = new Command(async (param) => await ExecuteAddGroupCommand(param)));
 			}
 		}
+		Group G = new Group();
 
 		private async Task ExecuteAddGroupCommand(object param)
 		{
 			try
 			{
-				Groups = (Group)param;
-				if (Groups == null)
-					return;
-
-				int id = App.Database.SaveItem<Group>(Groups);
-				}
+				G.GroupID = App.Database.SaveItem<Group>(Groups);
+			}
 			catch (Exception ex)
 			{
 				Console.WriteLine("An Exception Occured During Save Record {0}", ex.Message);

@@ -43,7 +43,7 @@ namespace RoomiesCalc
 			{ 
 				Text = "Make your Group" 
 			};
-			txt_Grouptitle.SetBinding(Entry.TextProperty,"Name");
+			txt_Grouptitle.SetBinding(Entry.TextProperty,"Groups.GroupName");
 
 			list_Group = new ListView
 			{ 
@@ -100,7 +100,27 @@ namespace RoomiesCalc
 		{
 			base.OnAppearing ();
 			list_Group.ItemsSource = ViewModel.GroupList;
-		}		
+		}
+
+		public class GroupCell : ViewCell
+		{
+			public GroupCell ()
+			{
+				var label = new Label
+				{
+					XAlign = TextAlignment.Center
+				};
+				label.SetBinding (Label.TextProperty, "Groups.GroupName");
+
+				var layout = new StackLayout {
+					Padding = new Thickness (20, 0, 0, 0),
+					Orientation = StackOrientation.Horizontal,
+					HorizontalOptions = LayoutOptions.StartAndExpand,
+					Children = { label }
+				};
+				View = layout;
+			}
+		}
 	}
 }
 
