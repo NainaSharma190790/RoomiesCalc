@@ -24,6 +24,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\NotificationView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\BalanceView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Colors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\RCEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Renderers\" />

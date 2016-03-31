@@ -15,7 +15,7 @@ namespace RoomiesCalc
 		public App ()
 		{
 			Database.CreateTables<Group> ();
-			MainPage = new AddGroupView (); 
+			MainPage = new LoginView (); 
 		}
 		public static RoomiesCalcDataBase Database 
 		{

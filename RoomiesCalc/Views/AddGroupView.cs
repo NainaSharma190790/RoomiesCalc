@@ -65,7 +65,9 @@ namespace RoomiesCalc
 			list_Group = new ListView
 			{ 
 				VerticalOptions=LayoutOptions.FillAndExpand,
-				BackgroundColor=Colors.RC_Green.ToFormsColor(),
+				BackgroundColor=Color.Transparent
+					//This one is list view color
+				//BackgroundColor=Colors.RC_Green.ToFormsColor(),
 			};
 
 			rltv_PopUpLayout =	new RelativeLayout 
