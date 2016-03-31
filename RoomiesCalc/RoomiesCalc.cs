@@ -6,8 +6,12 @@ namespace RoomiesCalc
 {
 	public class App : Application
 	{
+		#region All Fields 
+		public static int ScreenHeight;// for device height
+		public static int ScreenWidth;// for device width
 		static RoomiesCalcDataBase database;
 
+		#endregion
 		public App ()
 		{
 			Database.CreateTables<Group> ();

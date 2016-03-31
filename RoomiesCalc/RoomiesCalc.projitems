@@ -18,9 +18,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Interface\IBusinessBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataBase\RoomCalDataBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataBase\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\BaseView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VerificationView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\LoginView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NotificationView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\BalanceView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Colors.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Renderers\" />
     <Folder Include="$(MSBuildThisFileDirectory)CellView\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />
   </ItemGroup>
 </Project>

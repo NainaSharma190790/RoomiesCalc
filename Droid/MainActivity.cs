@@ -18,6 +18,11 @@ namespace RoomiesCalc.Droid
 			base.OnCreate (bundle);
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
+			//Get width and hieght from current device
+			int Width = Convert.ToInt32(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+			int Height = Convert.ToInt16(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
+		    App.ScreenHeight = Height;
+	        App.ScreenWidth = Width;
 
 			LoadApplication (new App ());
 		}

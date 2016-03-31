@@ -78,6 +78,27 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\Bg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Bg.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Bg.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Bg.jpg" />
+    <AndroidResource Include="Resources\drawable\Add.png" />
+    <AndroidResource Include="Resources\drawable\Notification.png" />
+    <AndroidResource Include="Resources\drawable\Share.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Add.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Share.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Add.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Share.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Add.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Share.png" />
+    <AndroidResource Include="Resources\drawable\Cross.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Cross.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Cross.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Cross.png" />
+    <AndroidResource Include="Resources\drawable\Group.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Group.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Group.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Group.png" />
   </ItemGroup>
   <Import Project="..\RoomiesCalc\RoomiesCalc.projitems" Label="Shared" Condition="Exists('..\RoomiesCalc\RoomiesCalc.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

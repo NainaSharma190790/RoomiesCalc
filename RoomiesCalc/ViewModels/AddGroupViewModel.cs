@@ -54,7 +54,7 @@ namespace RoomiesCalc
 		{
 			try
 			{
-				G.GroupID = App.Database.SaveItem<Group>(Groups);
+				 App.Database.SaveItem<Group>(G);
 			}
 			catch (Exception ex)
 			{
