@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace RoomiesCalc
 {
-	public class NotificationView: ContentPage
+	public class NotificationViewPage: ContentPage
 	{
-		public NotificationView ()
+		public NotificationViewPage ()
 		{
 			Content = new StackLayout { 
 				Children = {

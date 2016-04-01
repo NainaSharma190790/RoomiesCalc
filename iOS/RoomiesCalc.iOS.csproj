@@ -119,7 +119,4 @@
     <AndroidResource Include="Resources\Bg2.png" />
     <AndroidResource Include="Resources\Logo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Renderers\" />
-  </ItemGroup>
 </Project>

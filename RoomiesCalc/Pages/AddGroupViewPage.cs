@@ -4,27 +4,29 @@ using Xamarin.Forms;
 
 namespace RoomiesCalc
 {
-	public class AddGroupView : BaseView
+	public class AddPlaceViewPage : BaseViewPage
 	{
 		#region All Fileds
+
 		public RelativeLayout rltv_MainLayout,rltv_PopUpLayout;
 		public Button btn_Ok,btn_Cancel;
-		public Image img_Backgroud,img_Group;
-		public Label lbl_Grouptitle;
-		public Entry txt_Grouptitle;
+		public Image img_Backgroud,img_Place;
+		public Label lbl_Placetitle;
+		public Entry txt_Placetitle;
 		public StackLayout stack_Popup,stack_Main,stack_PopupInside;
-		public ListView list_Group;
-		public Group GroupInfo=new Group(); 
+		public ListView list_Place;
+		public Place PlaceInfo=new Place(); 
 
-		private AddGroupViewModel ViewModel
+		private AddPlaceViewModel ViewModel
 		{
-			get { return new AddGroupViewModel(); } //Type cast BindingContex as AddGroupViewModel to access binded properties
+			get { return new AddPlaceViewModel(); } //Type cast BindingContex as AddPlaceViewModel to access binded properties
 		}
+
 		#endregion
 
-		public AddGroupView ()
+		public AddPlaceViewPage ()
 		{
-			BindingContext = new AddGroupViewModel();
+			BindingContext = new AddPlaceViewModel();
 		
 			img_Backgroud = new Image
 			{
@@ -32,14 +34,14 @@ namespace RoomiesCalc
 				HeightRequest=h,
 				Aspect=	Aspect.Fill
 			};
-			img_Group = new Image
+			img_Place = new Image
 			{
-				Source="Group.png",
+				Source="Place.png",
 			};
 			btn_Ok =	new Button 
 			{ 
 				Text = "OK" ,
-				Command=ViewModel.AddGroupCommand,
+				Command=ViewModel.AddPlaceCommand,
 				HorizontalOptions=LayoutOptions.CenterAndExpand					
 			};
 
@@ -49,20 +51,20 @@ namespace RoomiesCalc
 				BackgroundColor=Color.Transparent
 			};
 
-			txt_Grouptitle = new Entry 
+			txt_Placetitle = new Entry 
 			{ 
-				Placeholder = "Group Name" ,
+				Placeholder = "Place Name" ,
 				WidthRequest=(w / 4) * 2
 			};
 
-			lbl_Grouptitle = new Label 
+			lbl_Placetitle = new Label 
 			{ 
-				Text = "Make your Group" ,
+				Text = "Make your Place" ,
 				FontSize=20
 			};
-			txt_Grouptitle.SetBinding(Entry.TextProperty,"G.GroupName");
+			txt_Placetitle.SetBinding(Entry.TextProperty,"G.PlaceName");
 
-			list_Group = new ListView
+			list_Place = new ListView
 			{ 
 				VerticalOptions=LayoutOptions.FillAndExpand,
 				BackgroundColor=Color.Transparent
@@ -89,15 +91,15 @@ namespace RoomiesCalc
 				VerticalOptions=LayoutOptions.CenterAndExpand,
 				Children = 
 				{
-					lbl_Grouptitle,
+					lbl_Placetitle,
 					new StackLayout
 					{
 						Orientation=StackOrientation.Horizontal,
 						BackgroundColor=Color.Transparent,
 						Children=
 						{
-							img_Group,
-							txt_Grouptitle
+							img_Place,
+							txt_Placetitle
 						}
 					},
 					btn_Ok
@@ -118,8 +120,8 @@ namespace RoomiesCalc
 								
 				}				
 			};
-			list_Group.ItemTemplate = new DataTemplate (typeof (GroupCell));
-			list_Group.ItemsSource = ViewModel.GroupList;
+			list_Place.ItemTemplate = new DataTemplate (typeof (PlaceCell));
+			list_Place.ItemsSource = ViewModel.PlaceList;
 
 
 			btn_Ok.Clicked+= (object sender, EventArgs e) => 
@@ -137,7 +139,7 @@ namespace RoomiesCalc
 				BackgroundColor=Color.Transparent,
 				Children = 
 				{
-					list_Group
+					list_Place
 				}
 			};
 
@@ -188,7 +190,7 @@ namespace RoomiesCalc
 		protected override void OnAppearing ()
 		{
 			base.OnAppearing ();
-			list_Group.ItemsSource = ViewModel.GroupList;
+			list_Place.ItemsSource = ViewModel.PlaceList;
 		}
 
 		void OnAddTapped(View view, object sender)
@@ -204,17 +206,17 @@ namespace RoomiesCalc
 
 		#region Custom View cell
 		/// <summary>
-		/// This class is a ViewCell that will be displayed for each Group Cell.
+		/// This class is a ViewCell that will be displayed for each Place Cell.
 		/// </summary>
-		public class GroupCell : ViewCell
+		public class PlaceCell : ViewCell
 		{
-			public GroupCell ()
+			public PlaceCell ()
 			{
 				var label = new Label
 				{
 					XAlign = TextAlignment.Center
 				};
-				label.SetBinding (Label.TextProperty, "Groups.GroupName");
+				label.SetBinding (Label.TextProperty, "Places.PlaceName");
 
 				var layout = new StackLayout {
 					Padding = new Thickness (20, 0, 0, 0),

@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace RoomiesCalc
 {
-	public class BaseView:ContentPage
+	public class BaseViewPage:ContentPage
 	{
 		#region All Fields
 		public StackLayout stack_NavBar;
@@ -13,7 +13,7 @@ namespace RoomiesCalc
 		public int w=App.ScreenWidth;
 
 		#endregion
-		public BaseView ()
+		public BaseViewPage ()
 		{
 			img_Back = new Image
 			{ 				

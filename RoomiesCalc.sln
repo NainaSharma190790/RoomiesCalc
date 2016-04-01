@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RoomiesCalc", "RoomiesCalc\RoomiesCalc.shproj", "{F75682C0-E9AA-46CB-83B2-E109F59A5612}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RoomiesCalc.Shared", "RoomiesCalc\RoomiesCalc.Shared.shproj", "{F75682C0-E9AA-46CB-83B2-E109F59A5612}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomiesCalc.iOS", "iOS\RoomiesCalc.iOS.csproj", "{E3DA6CCB-1692-47F3-A00A-7856D5B55D66}"
 EndProject

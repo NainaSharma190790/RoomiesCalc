@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace RoomiesCalc
 {
-	public class BalanceView : ContentPage
+	public class BalanceViewPage : ContentPage
 	{
-		public BalanceView ()
+		public BalanceViewPage ()
 		{
 			Content = new StackLayout { 
 				Children = {

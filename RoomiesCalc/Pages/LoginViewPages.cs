@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace RoomiesCalc
 {
-	public class LoginView: BaseView
+	public class LoginViewPage: BaseViewPage
 	{
 		#region All Fileds
 
@@ -18,9 +18,10 @@ namespace RoomiesCalc
 		{
 			get { return BindingContext as LoginViewModel; } //Type cast BindingContex as HomeViewModel to access binded properties
 		}
+
 		#endregion
 
-		public LoginView ()
+		public LoginViewPage ()
 		{
 			BindingContext = new LoginViewModel(this.Navigation);
 
@@ -56,7 +57,7 @@ namespace RoomiesCalc
 				WidthRequest=w/2,
 				HorizontalOptions=LayoutOptions.CenterAndExpand,
 				TextColor=Color.White,
-				Placeholder="Your Name",
+				Placeholder="FullName",
 				BackgroundColor=Color.Transparent,
 				TranslationX=10,
 					
@@ -67,7 +68,7 @@ namespace RoomiesCalc
 				WidthRequest=w/2,
 				HorizontalOptions=LayoutOptions.CenterAndExpand,
 				TextColor=Color.White,
-				Placeholder="Your Number",
+				Placeholder="MobileNumber",
 				BackgroundColor=Color.Transparent
 					
 					

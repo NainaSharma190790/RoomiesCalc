@@ -9,21 +9,21 @@ namespace RoomiesCalc
 		#region All Fields 
 		public static int ScreenHeight;// for device height
 		public static int ScreenWidth;// for device width
-		static RoomiesCalcDataBase database;
+		static RoomiesCalcDatabase database;
 
 		#endregion
 		public App ()
 		{
-			Database.CreateTables<Group> ();
-			MainPage = new LoginView (); 
+			Database.CreateTables<Place> ();
+			MainPage = new LoginViewPage(); 
 		}
-		public static RoomiesCalcDataBase Database 
+		public static RoomiesCalcDatabase Database 
 		{
 			get 
 			{ 
 				if (database == null) 
 				{
-					database = new RoomiesCalcDataBase ();
+					database = new RoomiesCalcDatabase ();
 				}
 				return database; 
 			}

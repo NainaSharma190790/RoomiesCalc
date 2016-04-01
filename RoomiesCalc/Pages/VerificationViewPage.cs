@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace RoomiesCalc
 {
-	public class VerificationView: BaseView
+	public class VerificationViewPage: BaseViewPage
 	{
 		#region All Fileds
 
@@ -18,7 +18,7 @@ namespace RoomiesCalc
 		}
 		#endregion
 
-		public VerificationView ()
+		public VerificationViewPage ()
 		{
 			BindingContext = new LoginViewModel(this.Navigation);
 
