@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RoomiesCalc.VerificationViewPage">
+	<ContentPage.Content>
+	 
+	<Grid VerticalOptions="Fill" StyleId="aboutPage">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="Auto" />
+				</Grid.RowDefinitions>
+
+				<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="30,30,30,30">
+	<Image Source="Logo.png" HorizontalOptions="CenterAndExpand" />
+			<StackLayout  HorizontalOptions="FillAndExpand" Padding="0,30,0,0" >
+
+	 <Label Text="Enter your OTP number" HorizontalOptions="CenterAndExpand" TextColor="White" BackgroundColor="Transparent" FontSize="22"/>
+
+		<StackLayout  HorizontalOptions="CenterAndExpand" Padding="0,30,0,30" Orientation="Horizontal">
+
+			<StackLayout HorizontalOptions="CenterAndExpand" Spacing="-2">
+			<Entry Placeholder="1" HorizontalOptions="FillAndExpand"  TextColor="White" />
+			<BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+			</StackLayout>
+			<StackLayout HorizontalOptions="CenterAndExpand" Spacing="-2">
+			<Entry Placeholder="2" HorizontalOptions="FillAndExpand"  TextColor="White" />
+			<BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+			</StackLayout>
+			<StackLayout HorizontalOptions="CenterAndExpand" Spacing="-2">
+			<Entry Placeholder="3" HorizontalOptions="FillAndExpand" TextColor="White" />
+			<BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+			</StackLayout>
+			<StackLayout HorizontalOptions="CenterAndExpand" Spacing="-2">
+			<Entry Placeholder="4" HorizontalOptions="FillAndExpand"  TextColor="White" />
+			<BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+			</StackLayout>
+
+		</StackLayout>
+				</StackLayout>
+
+		<Button Text="Verify" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="Lime" Command="{Binding VerficationClick}"/>
+
+	</StackLayout>
+			</Grid>
+	</ContentPage.Content>
+</ContentPage>

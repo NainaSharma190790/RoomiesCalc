@@ -9,7 +9,7 @@ using System.IO;
 
 namespace RoomiesCalc
 {
-	public class RoomiesCalcDataBase
+	public class RoomiesCalcDatabase
 	{
 		#region Private Declarations
 
@@ -54,7 +54,7 @@ namespace RoomiesCalc
 		/// <param name='path'>
 		/// Path.
 		/// </param>
-		public RoomiesCalcDataBase()
+		public RoomiesCalcDatabase()
 		{
 			RCDataBase = new SQLiteConnection(DatabasePath);
 		}

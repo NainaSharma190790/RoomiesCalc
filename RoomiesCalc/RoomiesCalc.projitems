@@ -10,26 +10,37 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)RoomiesCalc.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\AddGroupView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AddGroupViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Group.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interface\IBusinessBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataBase\RoomCalDataBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataBase\SQLite.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\BaseView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\VerificationView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\LoginView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\NotificationView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\BalanceView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Colors.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Renderers\RCEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AddGroupViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BalanceViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BaseViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NotificationViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Place.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginViewPage.xaml.cs">
+      <DependentUpon>LoginViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\VerificationViewPage.xaml.cs">
+      <DependentUpon>VerificationViewPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Renderers\" />
     <Folder Include="$(MSBuildThisFileDirectory)CellView\" />
     <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LoginViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\VerificationViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

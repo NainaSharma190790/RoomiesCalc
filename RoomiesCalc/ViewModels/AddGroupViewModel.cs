@@ -7,55 +7,56 @@ using System.Collections.ObjectModel;
 
 namespace RoomiesCalc
 {
-	public class AddGroupViewModel:BaseViewModel
+	public class AddPlaceViewModel:BaseViewModel
 	{
 		private INavigation _navigation; // HERE
 
-		public AddGroupViewModel() 
+		public AddPlaceViewModel() 
 		{
-            GroupList = new ObservableCollection<Group>();
+			_places = new Place();
+			_placeList = new ObservableCollection<Place>();
+
+
 		}
 
-		private ObservableCollection<Group> _groupList;
+		private ObservableCollection<Place> _placeList;
 
-		public ObservableCollection<Group> GroupList
+		public ObservableCollection<Place> PlaceList
 		{
-			get { return _groupList; }
+			get { return _placeList; }
 			set
 			{
-				_groupList = value;
+				_placeList = value;
 				OnPropertyChanged();
 			}
 		}
-		private Group _groups;
+		private Place _places;
 
-		public Group Groups
+		public Place Places
 		{
-			get { return _groups; }
+			get { return _places; }
 			set
 			{
-				_groups = value;
+				_places = value;
 				OnPropertyChanged();
 			}
 		}
 		#region Load and add group  Command
-		private Command _addGroupCommand;
+		private Command _addPlaceCommand;
 
-		public Command AddGroupCommand
+		public Command AddPlaceCommand
 		{
 			get
 			{
-				return _addGroupCommand ?? (_addGroupCommand = new Command(async (param) => await ExecuteAddGroupCommand(param)));
+				return _addPlaceCommand ?? (_addPlaceCommand = new Command(async (param) => await ExecuteAddPlaceCommand(param)));
 			}
 		}
-		Group G = new Group();
 
-		private async Task ExecuteAddGroupCommand(object param)
+		private async Task ExecuteAddPlaceCommand(object param)
 		{
 			try
 			{
-				 App.Database.SaveItem<Group>(G);
-
+				int i= App.Database.SaveItem<Place>(Places);
 			}
 			catch (Exception ex)
 			{
@@ -65,13 +66,13 @@ namespace RoomiesCalc
 		}
 
 
-		private Command _LoadAllGroups;
+		private Command _LoadAllPlaces;
 
-		public Command LoadAllGroups
+		public Command LoadAllPlaces
 		{
 			get
 			{
-				return _LoadAllGroups ?? (_LoadAllGroups = new Command(async () => await ExecuteLoadCommand()));
+				return _LoadAllPlaces ?? (_LoadAllPlaces = new Command(async () => await ExecuteLoadCommand()));
 			}
 		}
 
@@ -80,7 +81,7 @@ namespace RoomiesCalc
 			try
 			{
 
-				_groupList = App.Database.GetItems<Group>(); //From Local DB
+				_placeList = App.Database.GetItems<Place>(); //From Local DB
 
 			}
 			catch (Exception ex)

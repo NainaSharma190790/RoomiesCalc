@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RoomiesCalc", "RoomiesCalc\RoomiesCalc.shproj", "{F75682C0-E9AA-46CB-83B2-E109F59A5612}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RoomiesCalc.Shared", "RoomiesCalc\RoomiesCalc.Shared.shproj", "{BE3F7952-A683-41E6-BA2D-C5390EC14379}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomiesCalc.iOS", "iOS\RoomiesCalc.iOS.csproj", "{E3DA6CCB-1692-47F3-A00A-7856D5B55D66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomiesCalc.Droid", "Droid\RoomiesCalc.Droid.csproj", "{4B782B33-808E-4522-8EBB-1295E526FED5}"
@@ -23,6 +25,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		RoomiesCalc\RoomiesCalc.projitems*{e3da6ccb-1692-47f3-a00a-7856d5b55d66}*SharedItemsImports = 4
 		RoomiesCalc\RoomiesCalc.projitems*{4b782b33-808e-4522-8ebb-1295e526fed5}*SharedItemsImports = 4
+		RoomiesCalc\RoomiesCalc.projitems*{be3f7952-a683-41e6-ba2d-c5390ec14379}*SharedItemsImports = 13
 		RoomiesCalc\RoomiesCalc.projitems*{f75682c0-e9aa-46cb-83b2-e109f59a5612}*SharedItemsImports = 13
 		Latest\RoomiesCalc\RoomiesCalc\RoomiesCalc.projitems*{76a1897d-a088-4efa-8e2d-da9b94e072b3}*SharedItemsImports = 4
 		Latest\RoomiesCalc\RoomiesCalc\RoomiesCalc.projitems*{333ff54f-8dac-459b-9b33-ac2b9dbd43b9}*SharedItemsImports = 13
@@ -270,6 +273,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F75682C0-E9AA-46CB-83B2-E109F59A5612} = {4A73061E-D2DA-449B-8E8D-F4D2BEDE43B6}
+		{BE3F7952-A683-41E6-BA2D-C5390EC14379} = {4A73061E-D2DA-449B-8E8D-F4D2BEDE43B6}
 		{E3DA6CCB-1692-47F3-A00A-7856D5B55D66} = {4A73061E-D2DA-449B-8E8D-F4D2BEDE43B6}
 		{4B782B33-808E-4522-8EBB-1295E526FED5} = {4A73061E-D2DA-449B-8E8D-F4D2BEDE43B6}
 		{84FE484B-9049-4099-9302-09F55ED4E217} = {3D02F5E7-60FA-4B65-B829-F8DF97E1BEB3}

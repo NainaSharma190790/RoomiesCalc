@@ -23,7 +23,7 @@ namespace RoomiesCalc
 			{
 				return new Command (async () =>
 					{
-						_navigation.PushModalAsync(new VerificationView ());
+						_navigation.PushModalAsync(new VerificationViewPage ());
 					}
 				);
 			}
@@ -39,7 +39,7 @@ namespace RoomiesCalc
 			{
 				return new Command (async () =>
 					{
-						_navigation.PushModalAsync(new AddGroupView ());
+						_navigation.PushModalAsync(new AddPlaceViewPage ());
 					}
 				);
 			}

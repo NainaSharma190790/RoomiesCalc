@@ -26,7 +26,6 @@ namespace RoomiesCalc.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::RoomiesCalc.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
@@ -986,32 +985,38 @@ namespace RoomiesCalc.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f090047
-			public const int abc_background_cache_hint_selector_material_dark = 2131296327;
+			// aapt resource value: 0x7f090049
+			public const int RC_Green = 2131296329;
 			
 			// aapt resource value: 0x7f090048
-			public const int abc_background_cache_hint_selector_material_light = 2131296328;
+			public const int RC_Pink = 2131296328;
 			
-			// aapt resource value: 0x7f090049
-			public const int abc_color_highlight_material = 2131296329;
+			// aapt resource value: 0x7f090055
+			public const int abc_background_cache_hint_selector_material_dark = 2131296341;
+			
+			// aapt resource value: 0x7f090056
+			public const int abc_background_cache_hint_selector_material_light = 2131296342;
+			
+			// aapt resource value: 0x7f090057
+			public const int abc_color_highlight_material = 2131296343;
 			
 			// aapt resource value: 0x7f090004
 			public const int abc_input_method_navigation_guard = 2131296260;
 			
-			// aapt resource value: 0x7f09004a
-			public const int abc_primary_text_disable_only_material_dark = 2131296330;
+			// aapt resource value: 0x7f090058
+			public const int abc_primary_text_disable_only_material_dark = 2131296344;
 			
-			// aapt resource value: 0x7f09004b
-			public const int abc_primary_text_disable_only_material_light = 2131296331;
+			// aapt resource value: 0x7f090059
+			public const int abc_primary_text_disable_only_material_light = 2131296345;
 			
-			// aapt resource value: 0x7f09004c
-			public const int abc_primary_text_material_dark = 2131296332;
+			// aapt resource value: 0x7f09005a
+			public const int abc_primary_text_material_dark = 2131296346;
 			
-			// aapt resource value: 0x7f09004d
-			public const int abc_primary_text_material_light = 2131296333;
+			// aapt resource value: 0x7f09005b
+			public const int abc_primary_text_material_light = 2131296347;
 			
-			// aapt resource value: 0x7f09004e
-			public const int abc_search_url_text = 2131296334;
+			// aapt resource value: 0x7f09005c
+			public const int abc_search_url_text = 2131296348;
 			
 			// aapt resource value: 0x7f090005
 			public const int abc_search_url_text_normal = 2131296261;
@@ -1022,11 +1027,11 @@ namespace RoomiesCalc.Droid
 			// aapt resource value: 0x7f090007
 			public const int abc_search_url_text_selected = 2131296263;
 			
-			// aapt resource value: 0x7f09004f
-			public const int abc_secondary_text_material_dark = 2131296335;
+			// aapt resource value: 0x7f09005d
+			public const int abc_secondary_text_material_dark = 2131296349;
 			
-			// aapt resource value: 0x7f090050
-			public const int abc_secondary_text_material_light = 2131296336;
+			// aapt resource value: 0x7f09005e
+			public const int abc_secondary_text_material_light = 2131296350;
 			
 			// aapt resource value: 0x7f090008
 			public const int accent_material_dark = 2131296264;
@@ -1045,6 +1050,15 @@ namespace RoomiesCalc.Droid
 			
 			// aapt resource value: 0x7f09000d
 			public const int background_material_light = 2131296269;
+			
+			// aapt resource value: 0x7f09004c
+			public const int blueDark = 2131296332;
+			
+			// aapt resource value: 0x7f09004d
+			public const int blueLight = 2131296333;
+			
+			// aapt resource value: 0x7f09004b
+			public const int bluePrimary = 2131296331;
 			
 			// aapt resource value: 0x7f09000e
 			public const int bright_foreground_disabled_material_dark = 2131296270;
@@ -1127,6 +1141,21 @@ namespace RoomiesCalc.Droid
 			// aapt resource value: 0x7f09001b
 			public const int foreground_material_light = 2131296283;
 			
+			// aapt resource value: 0x7f090050
+			public const int grayDark = 2131296336;
+			
+			// aapt resource value: 0x7f09004f
+			public const int grayLight = 2131296335;
+			
+			// aapt resource value: 0x7f090051
+			public const int grayMedium = 2131296337;
+			
+			// aapt resource value: 0x7f09004e
+			public const int grayPrimary = 2131296334;
+			
+			// aapt resource value: 0x7f09004a
+			public const int greenDark = 2131296330;
+			
 			// aapt resource value: 0x7f09001c
 			public const int highlighted_text_material_dark = 2131296284;
 			
@@ -1199,6 +1228,12 @@ namespace RoomiesCalc.Droid
 			// aapt resource value: 0x7f090033
 			public const int primary_text_disabled_material_light = 2131296307;
 			
+			// aapt resource value: 0x7f090052
+			public const int purpleDark = 2131296338;
+			
+			// aapt resource value: 0x7f090053
+			public const int purplePrimary = 2131296339;
+			
 			// aapt resource value: 0x7f090034
 			public const int ripple_material_dark = 2131296308;
 			
@@ -1223,17 +1258,23 @@ namespace RoomiesCalc.Droid
 			// aapt resource value: 0x7f09003b
 			public const int switch_thumb_disabled_material_light = 2131296315;
 			
-			// aapt resource value: 0x7f090051
-			public const int switch_thumb_material_dark = 2131296337;
+			// aapt resource value: 0x7f09005f
+			public const int switch_thumb_material_dark = 2131296351;
 			
-			// aapt resource value: 0x7f090052
-			public const int switch_thumb_material_light = 2131296338;
+			// aapt resource value: 0x7f090060
+			public const int switch_thumb_material_light = 2131296352;
 			
 			// aapt resource value: 0x7f09003c
 			public const int switch_thumb_normal_material_dark = 2131296316;
 			
 			// aapt resource value: 0x7f09003d
 			public const int switch_thumb_normal_material_light = 2131296317;
+			
+			// aapt resource value: 0x7f090054
+			public const int textPrimary = 2131296340;
+			
+			// aapt resource value: 0x7f090047
+			public const int white = 2131296327;
 			
 			static Color()
 			{
