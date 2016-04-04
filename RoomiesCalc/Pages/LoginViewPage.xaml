@@ -1,6 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RoomiesCalc.LoginViewPage">
-	<ContentPage.Content>
 
+	<ContentPage.Content>
+	 
+	<Grid VerticalOptions="Fill" StyleId="aboutPage">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="Auto" />
+				</Grid.RowDefinitions>
+
+				<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="30,30,30,30">
+	<Image Source="Logo.png" HorizontalOptions="CenterAndExpand" />
+
+		<StackLayout Spacing="0" HorizontalOptions="FillAndExpand" Padding="0,30,0,0">
+			<Entry Placeholder="User Name" HorizontalOptions="FillAndExpand" TextColor="White"  />
+			<BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+		</StackLayout>
+
+		<StackLayout Spacing="0" HorizontalOptions="FillAndExpand" Padding="0,0,0,30">
+			<Entry Placeholder="Mobile Number" HorizontalOptions="FillAndExpand" TextColor="White" />
+			<BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Gray"/>
+		</StackLayout>
+
+	<Button Text="Submit" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="Lime" Command="{Binding LoginClick}"/>
+
+	</StackLayout>
+			</Grid>
 	</ContentPage.Content>
 </ContentPage>

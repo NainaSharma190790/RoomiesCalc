@@ -6,7 +6,7 @@ namespace RoomiesCalc
 	public class BaseViewPage:ContentPage
 	{
 		#region All Fields
-		public StackLayout stack_NavBar;
+		protected StackLayout stack_NavBar;
 		public Image img_Back,img_Add,img_Share,img_Notification;
 		public Label lbl_Tittle;
 		public int h= App.ScreenHeight;

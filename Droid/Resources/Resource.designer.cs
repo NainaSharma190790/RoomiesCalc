@@ -41,6 +41,61 @@ namespace RoomiesCalc.Droid
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f030002
+			public const int RC_Green = 2130903042;
+			
+			// aapt resource value: 0x7f030001
+			public const int RC_Pink = 2130903041;
+			
+			// aapt resource value: 0x7f030005
+			public const int blueDark = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int blueLight = 2130903046;
+			
+			// aapt resource value: 0x7f030004
+			public const int bluePrimary = 2130903044;
+			
+			// aapt resource value: 0x7f030009
+			public const int grayDark = 2130903049;
+			
+			// aapt resource value: 0x7f030008
+			public const int grayLight = 2130903048;
+			
+			// aapt resource value: 0x7f03000a
+			public const int grayMedium = 2130903050;
+			
+			// aapt resource value: 0x7f030007
+			public const int grayPrimary = 2130903047;
+			
+			// aapt resource value: 0x7f030003
+			public const int greenDark = 2130903043;
+			
+			// aapt resource value: 0x7f03000b
+			public const int purpleDark = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int purplePrimary = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int textPrimary = 2130903053;
+			
+			// aapt resource value: 0x7f030000
+			public const int white = 2130903040;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -93,8 +148,8 @@ namespace RoomiesCalc.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int Mono_Android_Theme_Splash = 2130903040;
+			// aapt resource value: 0x7f040000
+			public const int Mono_Android_Theme_Splash = 2130968576;
 			
 			static Style()
 			{

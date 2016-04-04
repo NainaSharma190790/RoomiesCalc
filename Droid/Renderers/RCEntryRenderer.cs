@@ -14,7 +14,7 @@ using Xamarin.Forms;
 using RoomiesCalc;
 using RoomiesCalc.Droid.Renderer;
 
-[assembly: ExportRenderer(typeof(RCEntry), typeof(RCEntryRenderer))]
+[assembly: ExportRenderer(typeof(Entry), typeof(RCEntryRenderer))]
 namespace RoomiesCalc.Droid.Renderer
 {
 	public class RCEntryRenderer : EntryRenderer

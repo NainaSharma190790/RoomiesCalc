@@ -5,19 +5,18 @@ using Xamarin.Forms;
 
 namespace RoomiesCalc
 {
-	public partial class LoginViewPage : ContentPage
+	public partial class VerificationViewPage : ContentPage
 	{
 		private LoginViewModel ViewModel
 		{
 			get { return BindingContext as LoginViewModel; } //Type cast BindingContex as HomeViewModel to access binded properties
 		}
 
-
-		public LoginViewPage ()
+		public VerificationViewPage ()
 		{
 			BindingContext = new LoginViewModel(this.Navigation);
-			this.BackgroundImage = "Bg1.png";
 			InitializeComponent ();
+			BackgroundImage = "Bg1.png";
 		}
 	}
 }

@@ -114,6 +114,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Logo.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\Logo.png" />
     <AndroidResource Include="Resources\drawable\RCEntry.xml" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
   </ItemGroup>
   <Import Project="..\RoomiesCalc\RoomiesCalc.projitems" Label="Shared" Condition="Exists('..\RoomiesCalc\RoomiesCalc.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

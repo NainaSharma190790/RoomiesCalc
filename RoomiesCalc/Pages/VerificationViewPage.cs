@@ -103,7 +103,7 @@ namespace RoomiesCalc
 			};
 
 
-			RCEntry	txt = new RCEntry
+			Entry	txt = new Entry
 			{
 				WidthRequest=w/2,
 				HorizontalOptions=LayoutOptions.CenterAndExpand,

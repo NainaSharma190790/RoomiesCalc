@@ -17,17 +17,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)DataBase\RoomCalDataBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataBase\SQLite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Colors.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Renderers\RCEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\AddGroupViewPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BalanceViewPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BaseViewPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\NotificationViewPage.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\VerificationViewPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Place.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginViewPages.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginViewPage.xaml.cs">
       <DependentUpon>LoginViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\VerificationViewPage.xaml.cs">
+      <DependentUpon>VerificationViewPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LoginViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\VerificationViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
