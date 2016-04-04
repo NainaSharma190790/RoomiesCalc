@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:RegistrationPageXaml xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                            xmlns:local="clr-namespace:RoomiesCalc;assembly=RoomiesCalc"
+                            BackgroundColor="{StaticResource grayLight}"
+             x:Class="RoomiesCalc.RegistrationPage">
+	<Label Text="Registration Page" VerticalOptions="Center" TextColor="{StaticResource yellowDark}" HorizontalOptions="Center" />
+</local:RegistrationPageXaml>

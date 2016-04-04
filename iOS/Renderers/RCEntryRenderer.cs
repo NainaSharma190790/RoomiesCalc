@@ -15,20 +15,19 @@ using Xamarin.Forms.Platform.iOS;
 
 namespace RoomiesCalc.iOS.Renderer
 {
-	public class RCEntryRenderer : EntryRenderer
-	{
-		protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
-		{
-			base.OnElementChanged(e);
-			if (Control != null)
-			{
-				Control.Layer.BorderColor = UIColor.White.CGColor;
-				Control.Layer.BorderWidth = 0f;
-				Control.ClipsToBounds = true;
+    public class RCEntryRenderer : EntryRenderer
+    {
+        protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
+        {
+            base.OnElementChanged(e);
+            if (Control != null)
+            {
+                Control.Layer.BorderColor = UIColor.White.CGColor;
+                Control.Layer.BorderWidth = 0f;
+                Control.ClipsToBounds = true;
 
-				}
-			}
-		}
-	}
+            }
+        }
+    }
 }
 

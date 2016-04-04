@@ -13,7 +13,7 @@ namespace RoomiesCalc
 
 		public AddGroupViewModel() 
 		{
-
+            GroupList = new ObservableCollection<Group>();
 		}
 
 		private ObservableCollection<Group> _groupList;
@@ -55,6 +55,7 @@ namespace RoomiesCalc
 			try
 			{
 				 App.Database.SaveItem<Group>(G);
+
 			}
 			catch (Exception ex)
 			{

@@ -141,7 +141,7 @@ namespace RoomiesCalc
 				}
 			};
 
-
+            
 			rltv_MainLayout = new RelativeLayout 
 			{ 
 				VerticalOptions= LayoutOptions.FillAndExpand,
@@ -170,7 +170,7 @@ namespace RoomiesCalc
 			rltv_MainLayout.Children.Add (stack_NavBar, Constraint.Constant (0), Constraint.Constant (0));
 			#if __IOS__
 
-			rltv_MainLayout.Children.Add (stack_MainLayout, Constraint.Constant (0), Constraint.Constant ((h/9)));
+			//rltv_MainLayout.Children.Add (stack_MainLayout, Constraint.Constant (0), Constraint.Constant ((h/9)));
 
 			#endif
 
